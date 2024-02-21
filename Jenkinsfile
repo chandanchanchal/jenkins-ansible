@@ -13,3 +13,15 @@ pipeline {
 
             }
         }
+        
+        stage('Ansible Inti'){
+         steps{
+          script{
+           def aHome = tool name: 'Ansible'
+           env.PATH = "${aHome}:${evn.PATH}"
+           sh 'ansible --version'
+          }}
+        }
+    }
+    
+}
