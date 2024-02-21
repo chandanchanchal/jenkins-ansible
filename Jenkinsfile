@@ -14,7 +14,7 @@ pipeline {
             }
         }
         
-        stage('Ansible Inti'){
+        stage('Ansible Init'){
          steps{
           script{
            def aHome = tool name: 'Ansible'
