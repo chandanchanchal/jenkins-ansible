@@ -18,7 +18,7 @@ pipeline {
          steps{
           script{
            def aHome = tool name: 'Ansible'
-           env.PATH = "${aHome}:${evn.PATH}"
+           env.PATH = "${aHome}:${env.PATH}"
            sh 'ansible --version'
           }}
         }
