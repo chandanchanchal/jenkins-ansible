@@ -8,7 +8,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
                                 extensions: [[$class: 'CleanCheckout']],
-                                userRemoteConfigs: [[url: 'https://github.com/chandanchanchal/terraform_azure_infra_tf_01']]
+                                userRemoteConfigs: [[url: 'https://github.com/chandanchanchal/jenkins-ansible']]
                        ])
 
             }
